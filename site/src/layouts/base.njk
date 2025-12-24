@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title or doctrine.title }}</title>
+    <meta name="description" content="{{ description or '' }}" />
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav">
+          <a class="brand" href="/">{{ doctrine.title }}</a>
+          <ul class="nav-list">
+            {% for item in navigation %}
+              <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      {{ content | safe }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <div>Doctrine version: {{ doctrineVersion }} — living work</div>
+        </div>
+        <div class="footer-links">
+          <a href="{{ doctrine.links.github }}">GitHub</a>
+          <a href="{{ doctrine.links.author }}">Author</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

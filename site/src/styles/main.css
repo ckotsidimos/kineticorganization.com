@@ -1,0 +1,96 @@
+:root{
+  --bg:#fbfaf7;
+  --fg:#111111;
+  --muted:#6a6a6a;
+  --rule:#e7e3dc;
+  --max: 76ch;
+  --pad: 1.25rem;
+}
+html,body{height:100%;}
+body{
+  margin:0;
+  font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+  background:var(--bg);
+  color:var(--fg);
+  line-height:1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.container{
+  max-width: calc(var(--max) + (2 * var(--pad)));
+  margin: 0 auto;
+  padding: 0 var(--pad);
+}
+.site-header{
+  border-bottom:1px solid var(--rule);
+  padding: 1.25rem 0;
+  background: var(--bg);
+}
+.nav{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap: 1.5rem;
+}
+.brand{
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 650;
+  letter-spacing: .02em;
+  text-decoration:none;
+  color:var(--fg);
+  white-space:nowrap;
+}
+.nav-list{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  gap: 1rem;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: .95rem;
+}
+a{color:inherit;}
+.nav-list a{
+  text-decoration:none;
+  color:var(--muted);
+}
+.nav-list a:hover{color:var(--fg); text-decoration:underline;}
+
+main{padding: 2.25rem 0 3rem;}
+h1,h2,h3{
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  letter-spacing: .01em;
+  line-height: 1.2;
+  margin: 0 0 .75rem 0;
+}
+h1{font-size: 2rem;}
+h2{font-size: 1.25rem; margin-top: 2.1rem;}
+p{margin: 0 0 1rem 0;}
+.lede{font-size:1.05rem; color:var(--muted);}
+.rule{border-top:1px solid var(--rule); margin: 2rem 0;}
+.note{
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: .92rem;
+  color: var(--muted);
+  border-left: 2px solid var(--rule);
+  padding-left: .9rem;
+  margin: 1.25rem 0 1.75rem;
+}
+.site-footer{
+  border-top:1px solid var(--rule);
+  padding: 1.25rem 0;
+  color: var(--muted);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: .9rem;
+}
+.footer-inner{
+  display:flex;
+  justify-content:space-between;
+  gap: 1rem;
+  flex-wrap:wrap;
+}
+.footer-links{display:flex; gap: .9rem; flex-wrap:wrap;}
+.footer-links a{color:var(--muted); text-decoration:none;}
+.footer-links a:hover{color:var(--fg); text-decoration:underline;}
