@@ -1,3 +1,9 @@
+/**
+ * Kinetic Enterprise: A doctrinal framework on organizational physics, 
+ * decision latency, and enterprise execution under speed.
+ * * Part of "The Platform CTO" series by Christos Kotsidimos.
+ */
+
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Smooth scrolling for navigation links
     document.querySelectorAll('nav a').forEach(anchor => {
@@ -52,5 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(card);
     });
 
-    console.log("Kinetic Enterprise: Site initialized for The Platform CTO.");
+    console.log("Kinetic Enterprise: Framework initialized.");
+    console.log("Mission: Organizational physics, decision latency, and execution under speed.");
 });
