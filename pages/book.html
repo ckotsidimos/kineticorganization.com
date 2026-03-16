@@ -78,44 +78,15 @@
                     of the doctrine in its current stable form.
                 </p>
 
-                <!-- FORMSPREE GATE
-                     Replace the form action URL with your Formspree endpoint.
-                     Create a free form at https://formspree.io → copy the endpoint URL.
-                     The _next hidden field redirects to the PDF after submission.
-                     Example: action="https://formspree.io/f/xyzabcde"
-                -->
-
-                <div class="gate-form">
-                    <p style="font-size:0.8125rem;color:#64748b;margin-bottom:1.5rem;line-height:1.6;">
-                        The PDF is free. Enter your email and it will be sent to you directly.
-                    </p>
-                    <form action="https://formspree.io/f/xaqppeke"
-                          method="POST">
-
-                        <input type="hidden" name="_next"
-                               value="https://kineticorganization.com/assets/book/Full%20Book.pdf" />
-                        <input type="hidden" name="_subject"
-                               value="New request: The Kinetic Enterprise PDF" />
-
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name"
-                               placeholder="Your name" required />
-
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email"
-                               placeholder="your@email.com" required />
-
-                        <button type="submit" class="btn btn-amber"
-                                style="width:100%;text-align:center;margin-top:0.5rem;">
-                            Get the PDF &rarr;
-                        </button>
-                    </form>
-
-                    <p style="font-size:0.75rem;color:#334155;margin-top:1rem;line-height:1.6;">
-                        No spam. Your email will only be used to send you the PDF and
-                        occasional updates to the doctrine.
-                    </p>
-                </div>
+                <a href="/assets/book/Full%20Book.pdf"
+                   target="_blank"
+                   class="btn btn-amber"
+                   style="display:inline-block;">
+                    Download the PDF &rarr;
+                </a>
+                <p style="font-size:0.75rem;color:#475569;margin-top:1rem;line-height:1.6;">
+                    Free PDF. No sign-up required.
+                </p>
 
             </div>
         </div>
