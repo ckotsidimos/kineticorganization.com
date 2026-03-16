@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Author &mdash; The Kinetic Enterprise</title>
+    <meta name="description" content="Christos Kotsidimos, author of The Kinetic Enterprise doctrine." />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E83FDPZX1T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-E83FDPZX1T');
+    </script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+</head>
+<body>
+
+<nav class="glass-nav">
+    <div class="nav-inner">
+        <a href="/" class="nav-logo">The Kinetic Enterprise</a>
+        <ul class="nav-links">
+            <li><a href="/">Overview</a></li>
+            <li><a href="/doctrine/">Doctrine</a></li>
+            <li><a href="/doctrine/model.html">Model</a></li>
+            <li><a href="/pages/book.html" class="book-link">Book</a></li>
+            <li><a href="/lineage/">Lineage</a></li>
+        </ul>
+        <a href="https://kotsidimos.com" target="_blank" class="nav-author">Christos Kotsidimos &rarr;</a>
+    </div>
+</nav>
+
+<section style="min-height:60vh;display:flex;align-items:center;padding-top:5rem;background:linear-gradient(135deg,#1e293b 0%,#0f172a 100%);">
+    <div class="container">
+        <div class="prose-block reveal">
+            <p class="hero-eyebrow">Author</p>
+            <h1 style="font-size:clamp(2.5rem,5vw,4rem);font-weight:800;letter-spacing:-0.03em;line-height:1.1;color:#f8fafc;margin-bottom:1.5rem;">
+                Christos Kotsidimos
+            </h1>
+            <p style="font-size:1rem;color:#94a3b8;line-height:1.8;margin-bottom:1.25rem;max-width:620px;">
+                Senior technology leader working in cloud platforms, enterprise architecture,
+                and large-scale digital transformation in regulated industries. Author of
+                The Kinetic Enterprise doctrine.
+            </p>
+            <p style="font-size:1rem;color:#94a3b8;line-height:1.8;margin-bottom:2.5rem;max-width:620px;">
+                The Kinetic Enterprise emerged from recurring observations across multiple
+                organisations and sectors: that the constraints limiting enterprise execution
+                are structural rather than technical, and that the industrial operating model
+                is not the right chassis for the environment most large organisations are
+                now operating in.
+            </p>
+            <div style="display:flex;gap:1.25rem;flex-wrap:wrap;">
+                <a href="https://kotsidimos.com" target="_blank" class="btn btn-primary">
+                    Full Profile &rarr;
+                </a>
+                <a href="https://www.linkedin.com/in/ckotsidimos" target="_blank" class="btn btn-outline">
+                    LinkedIn &rarr;
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-inner">
+            <p>Doctrine version v2.1 &mdash; living work. Authored by <a href="https://kotsidimos.com" target="_blank">Christos Kotsidimos</a></p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/ckotsidimos" target="_blank">LinkedIn</a>
+                <a href="https://github.com/ckotsidimos/kinetic-enterprise" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

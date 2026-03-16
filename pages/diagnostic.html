@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnosis &mdash; The Kinetic Enterprise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Oswald:wght@500;700&display=swap');
+
+        :root {
+            --kinetic-amber: #F59E0B;
+            --kinetic-gold: #D97706;
+            --industrial-slate: #0F172A;
+            --iron-900: #0f172a;
+            --iron-800: #1e293b;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--iron-900);
+            color: #f8fafc;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+        }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+            height: 350px;
+            max-height: 400px;
+        }
+
+        .engine-card {
+            background: linear-gradient(145deg, #1e293b, #0f172a);
+            border: 1px solid #334155;
+            box-shadow: 8px 8px 0px rgba(0,0,0,0.5);
+        }
+
+        .kinetic-border {
+            border-left: 4px solid var(--kinetic-amber);
+        }
+
+        .glow {
+            text-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+        }
+    </style>
+    <!-- 
+        ANALYSIS:
+        - The Kinetic Gap: Distance between Tech Capability (potential) and Org Permission (kinetic).
+        - Transition: Deterministic Chassis (Legacy) -> Kinetic Engine (Future).
+        - Key Metrics: Time-to-Pivot, Cognitive Load, Mean Time to Compliance.
+
+        VISUALS:
+        - The Kinetic Gap: Overlapping Area Chart (Goal: Show Change/Comparison).
+        - Metric Performance: Bar Chart (Goal: Compare).
+        - Structural Shift: HTML/Tailwind Diagram.
+        
+        CONFIRMATION: NO SVG, NO MERMAID.
+    -->
+        <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E83FDPZX1T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-E83FDPZX1T');
+    </script>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body class="p-4 md:p-10 pt-24 md:pt-28">
+<nav class="glass-nav">
+    <div class="nav-inner">
+        <a href="/" class="nav-logo">The Kinetic Enterprise</a>
+        <ul class="nav-links">
+            <li><a href="/">Overview</a></li>
+            <li><a href="/doctrine/">Doctrine</a></li>
+            <li><a href="/doctrine/model.html">Model</a></li>
+            <li><a href="/pages/book.html" class="book-link">Book</a></li>
+            <li><a href="/lineage/">Lineage</a></li>
+        </ul>
+        <a href="https://kotsidimos.com" target="_blank" class="nav-author">Christos Kotsidimos &rarr;</a>
+    </div>
+</nav>
+
+
+
+    <header class="max-w-6xl mx-auto mb-16 border-b-4 border-amber-500 pb-8">
+        <h1 class="text-4xl md:text-6xl font-bold amber-glow tracking-tighter">THE <span class="text-amber-500">KINETIC</span> ENTERPRISE</h1>
+        <p class="text-xl text-slate-400 mt-4 uppercase tracking-widest font-light">Closing the gap between knowing and doing.</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto space-y-16">
+
+        <!-- SECTION 1: THE KINETIC GAP -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="text-3xl font-bold kinetic-border pl-4">The Kinetic Gap</h2>
+                <p class="text-slate-300 leading-relaxed">
+                    The distance between what your technology **can** do and what your organization **allows** it to do is not a talent problem. It is a structural one.
+                </p>
+                <div class="space-y-4">
+                    <div class="engine-card p-4">
+                        <span class="text-amber-500 font-bold uppercase text-xs">The Problem</span>
+                        <p class="text-white">Deterministic Chassis (1913 Factory)</p>
+                    </div>
+                    <div class="engine-card p-4 border-amber-500/50">
+                        <span class="text-amber-500 font-bold uppercase text-xs">The Solution</span>
+                        <p class="text-white">Kinetic Engine (Orchestrated Intent)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="gapChart"></canvas>
+            </div>
+        </section>
+
+        <!-- SECTION 2: METRICS OF VELOCITY -->
+        <section class="engine-card p-8 md:p-12">
+            <h2 class="text-3xl font-bold mb-8 text-center">Beyond Activity: Measuring Motion</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="chart-container h-64">
+                    <canvas id="metricsBar"></canvas>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-amber-500 text-xl font-bold">New Performance KPIs</h3>
+                    <ul class="space-y-4 text-sm text-slate-300">
+                        <li class="flex items-start">
+                            <span class="text-amber-500 mr-2">/</span>
+                            <span><strong>Time-to-Pivot:</strong> How fast can we change direction when the data changes?</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-amber-500 mr-2">/</span>
+                            <span><strong>Cognitive Load:</strong> Is governance helping or "cooking" the brain?</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-amber-500 mr-2">/</span>
+                            <span><strong>Mean Time to Compliance:</strong> Is compliance a gate or an embedded state?</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: THE PHYSICS OF COMMAND -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="engine-card p-6 border-t-4 border-slate-600">
+                <h4 class="font-bold text-amber-500 mb-2">MASS</h4>
+                <p class="text-xs text-slate-400">Talent, Capital, Data. Most enterprises have it. Few can move it.</p>
+            </div>
+            <div class="engine-card p-6 border-t-4 border-amber-500">
+                <h4 class="font-bold text-amber-500 mb-2">VELOCITY</h4>
+                <p class="text-xs text-slate-400">The rate of converting mass into market outcomes.</p>
+            </div>
+            <div class="engine-card p-6 border-t-4 border-slate-600">
+                <h4 class="font-bold text-amber-500 mb-2">KINETIC</h4>
+                <p class="text-xs text-slate-400">The energy of motion. Precision over control.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="mt-20 border-t border-slate-800 pt-8 text-center text-slate-500 text-xs uppercase tracking-widest pb-10">
+        Engineered for the Kinetic Enterprise // Christos Kotsidimos
+    </footer>
+
+    <script>
+        // LABEL WRAP LOGIC
+        function wrap(str) {
+            if (str.length <= 16) return str;
+            const words = str.split(' ');
+            const lines = [];
+            let currentLine = "";
+            words.forEach(word => {
+                if ((currentLine + word).length > 16) {
+                    lines.push(currentLine.trim());
+                    currentLine = word + " ";
+                } else {
+                    currentLine += word + " ";
+                }
+            });
+            lines.push(currentLine.trim());
+            return lines;
+        }
+
+        const tooltipConfig = {
+            callbacks: {
+                title: (items) => {
+                    let label = items[0].chart.data.labels[items[0].dataIndex];
+                    return Array.isArray(label) ? label.join(' ') : label;
+                }
+            }
+        };
+
+        // CHART 1: THE KINETIC GAP
+        new Chart(document.getElementById('gapChart'), {
+            type: 'line',
+            data: {
+                labels: ['2020', '2021', '2022', '2023', '2024', '2025', '2026'],
+                datasets: [
+                    {
+                        label: 'Tech Capability (Potential)',
+                        data: [10, 20, 35, 60, 85, 95, 100],
+                        borderColor: '#F59E0B',
+                        backgroundColor: 'rgba(245, 158, 11, 0.1)',
+                        fill: true,
+                        tension: 0.4
+                    },
+                    {
+                        label: 'Org Permission (Actual Motion)',
+                        data: [8, 12, 15, 18, 20, 22, 23],
+                        borderColor: '#94a3b8',
+                        backgroundColor: 'rgba(148, 163, 184, 0.2)',
+                        fill: true,
+                        tension: 0.4
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { labels: { color: '#fff' } }, tooltip: tooltipConfig },
+                scales: {
+                    x: { grid: { color: '#1e293b' }, ticks: { color: '#94a3b8' } },
+                    y: { display: false }
+                }
+            }
+        });
+
+        // CHART 2: METRICS BAR
+        new Chart(document.getElementById('metricsBar'), {
+            type: 'bar',
+            data: {
+                labels: ['Time-to-Pivot', 'Cognitive Load', 'Time-to-Compliance', 'Systemic Mass'].map(wrap),
+                datasets: [
+                    {
+                        label: 'Static Model',
+                        data: [90, 85, 95, 100],
+                        backgroundColor: '#334155'
+                    },
+                    {
+                        label: 'Kinetic Model',
+                        data: [15, 20, 10, 80],
+                        backgroundColor: '#F59E0B'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { labels: { color: '#fff' } }, tooltip: tooltipConfig },
+                scales: {
+                    x: { grid: { display: false }, ticks: { color: '#94a3b8' } },
+                    y: { grid: { color: '#1e293b' }, ticks: { color: '#94a3b8' } }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,57 +1,218 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kinetic Enterprise: A doctrinal framework on organizational physics, decision latency, and enterprise execution under speed by Christos Kotsidimos.">
-    <meta property="og:title" content="Kinetic Enterprise | The Platform CTO">
-    <meta property="og:description" content="Bridging Boardroom Strategy with Engineering Execution for the modern enterprise.">
-    <meta property="og:url" content="https://ckotsidimos.github.io/kinetic-enterprise/">
-    <meta property="og:type" content="website">
-    <title>The Model — Core Ideas</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <!-- Font Awesome for clean, professional icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Model &mdash; The Kinetic Enterprise</title>
+    <meta name="description" content="The structural model: decision latency as a governing variable, flow as a system property, governance as constraint." />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E83FDPZX1T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-E83FDPZX1T');
+    </script>
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
     <link rel="shortcut icon" href="/assets/images/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
-    <link rel="manifest" href="/assets/images/site.webmanifest" />
 </head>
 <body>
-<header>
-<nav class="container">
-<div class="logo">THE KINETIC ENTERPRISE</div>
-<ul>
-<li><a href="/">Overview</a></li>
-<li><a href="/doctrine/">Doctrine</a></li>
-<li><a href="/doctrine/model.html">Model</a></li>
-<li><a href="/lineage/">Lineage</a></li>
-<li><a href="/repository.html">Repository</a></li>
-<li><a href="/author.html">Author</a></li>
-</ul>
+
+<nav class="glass-nav">
+    <div class="nav-inner">
+        <a href="/" class="nav-logo">The Kinetic Enterprise</a>
+        <ul class="nav-links">
+            <li><a href="/">Overview</a></li>
+            <li><a href="/doctrine/">Doctrine</a></li>
+            <li><a href="/doctrine/model.html" class="active">Model</a></li>
+            <li><a href="/pages/book.html" class="book-link">Book</a></li>
+            <li><a href="/lineage/">Lineage</a></li>
+        </ul>
+        <a href="https://kotsidimos.com" target="_blank" class="nav-author">Christos Kotsidimos &rarr;</a>
+    </div>
 </nav>
-</header>
-<main class="container">
 
-<h1>The Model</h1>
+<section style="min-height:40vh;display:flex;align-items:center;padding-top:5rem;background:linear-gradient(135deg,#1e293b 0%,#0f172a 100%);">
+    <div class="container">
+        <div class="reveal">
+            <p class="hero-eyebrow">Structural Framework</p>
+            <h1 style="font-size:clamp(2.5rem,5vw,4rem);font-weight:800;letter-spacing:-0.03em;line-height:1.1;color:#f8fafc;margin-bottom:1rem;">
+                The Model
+            </h1>
+            <p style="font-size:1.125rem;color:#94a3b8;max-width:560px;line-height:1.75;">
+                The relationship between decision latency, organisational structure,
+                and execution capacity in enterprise systems under sustained speed.
+            </p>
+        </div>
+    </div>
+</section>
 
-<p>
-The Kinetic Enterprise model describes the relationship between
-decision latency, organizational structure, and execution capacity.
-</p>
+<section class="section">
+    <div class="container">
+        <div class="prose-block reveal">
 
-<ul>
-<li>Decision latency as a governing variable</li>
-<li>Flow as a system-level property</li>
-<li>Governance as constraint, not control</li>
-<li>Structural absorption of change</li>
-</ul>
+            <h2>Decision Latency as the Governing Variable</h2>
 
-</main>
-<footer>
-<div class="container">
-<p>Doctrine version v2.1 — living work<br>© 2026 Christos Kotsidimos</p>
-</div>
+            <p>
+                Decision latency is the elapsed time between intent and coordinated action across
+                a distributed organisation. It is the primary constraint in modern enterprise
+                execution, and it is structural in origin.
+            </p>
+
+            <p>
+                Most organisations measure performance through output metrics: throughput, delivery
+                velocity, cost per unit. These metrics capture activity. They do not capture the
+                friction that limits the conversion of intent into outcome. Decision latency is
+                that friction. When an organisation invests in technology and finds that execution
+                does not improve proportionally, the explanation is almost always a decision
+                latency problem that the technology investment did not address.
+            </p>
+
+            <p>
+                Decision latency is not a consequence of slow people or inadequate processes.
+                It is a consequence of operating architecture. The approval chains, governance
+                layers, and coordination mechanisms that large organisations build to manage
+                risk and maintain control encode latency into every decision cycle. At low
+                operating tempo, this latency is tolerable. Under sustained speed, it becomes
+                the dominant constraint.
+            </p>
+
+            <h2>The Structural Inversion</h2>
+
+            <p>
+                The diagram below illustrates the central tension in modern enterprise operation.
+                Technology capability, the potential energy available to the organisation, has
+                accelerated significantly across every domain. Organisational permission, the
+                capacity to actually deploy that capability through the decision and governance
+                architecture, has not kept pace.
+            </p>
+
+            <img src="/assets/images/structural-inversion.png"
+                 alt="Structural Inversion: the widening gap between technology capability and organisational permission"
+                 class="prose-image" />
+            <p class="prose-image-caption">The Kinetic Gap: technology capability (potential) versus organisational permission (actual motion)</p>
+
+            <p>
+                The gap between these two curves is the Kinetic Gap. It is not a technology
+                deficit. Most organisations with this gap have invested heavily in technology.
+                It is a structural deficit: the operating model has not been redesigned to
+                match the environment in which it is now operating. The industrial chassis,
+                designed for a stable world, is being asked to carry the load of a volatile one.
+            </p>
+
+            <h2>Flow as a System Property</h2>
+
+            <p>
+                The doctrine applies a constraint-based view of enterprise throughput. In any
+                system, the rate of output is governed by the most constrained element in the
+                flow. Investing upstream or downstream of the constraint does not improve system
+                throughput. It increases work-in-progress and creates the appearance of activity
+                while the actual bottleneck remains untouched.
+            </p>
+
+            <p>
+                In enterprise execution, the constraint is almost always in the decision layer,
+                not in the execution layer. Teams are capable. Technology is available. The
+                blockage is in the approval chain, the governance process, the coordination
+                overhead between functions that operate with different incentives and timelines.
+                Improving execution capability without addressing decision latency is like
+                widening a motorway either side of a bridge that has not been widened.
+                More capacity, same bottleneck.
+            </p>
+
+            <p>
+                Flow-based thinking also changes what you optimise for. Local optimisation,
+                improving the performance of individual functions or teams in isolation,
+                frequently degrades system-level throughput by creating imbalances that
+                pile up against the constraint. The model requires a system-level view of
+                where work actually stops, not where it moves most efficiently.
+            </p>
+
+            <h2>Governance as Constraint, Not Control</h2>
+
+            <p>
+                The industrial operating model treats governance as a control mechanism: a set
+                of approval processes and oversight structures designed to prevent error and
+                maintain accountability. In stable environments, this is rational. The cost of
+                the governance overhead is outweighed by the reduction in error rate.
+            </p>
+
+            <p>
+                Under conditions of sustained speed, this calculus inverts. The governance
+                overhead, encoded as approval chains and review gates, becomes the primary
+                source of decision latency. Every decision that must travel through a governance
+                layer adds elapsed time to the cycle. In high-tempo environments, this is not
+                a manageable friction. It is a structural brake.
+            </p>
+
+            <p>
+                The model proposes a different architecture: governance encoded as constraints
+                rather than control. Rather than requiring decisions to travel through a
+                governance layer for approval, the governance boundary is defined in advance.
+                Within it, decisions are made locally at the tempo the environment requires.
+                Outside it, escalation applies. This preserves accountability and risk management
+                while removing the latency that centralised approval generates.
+            </p>
+
+            <div class="prose-note">
+                This is not a prescription for removing governance. Regulated environments in
+                particular require rigorous oversight. The argument is structural: governance
+                that is embedded as boundary conditions enables faster local tempo than
+                governance that operates as a sequential approval process. The risk management
+                outcome can be equivalent. The decision latency outcome is not.
+            </div>
+
+            <h2>Structural Absorption of Change</h2>
+
+            <p>
+                The final element of the model concerns coherence under pressure. Organisations
+                that respond to environmental change by adding process, creating new oversight
+                structures, or layering coordination mechanisms tend to reduce their own
+                adaptability over time. Each addition is locally rational. The cumulative
+                effect is a system that becomes progressively more brittle as the complexity
+                of its internal coordination exceeds its ability to maintain coherence.
+            </p>
+
+            <p>
+                Structural coherence, the capacity to absorb change without fragmentation,
+                is a design property. It is built into the architecture of the operating
+                model through clear interfaces, defined decision rights, and governance that
+                enables rather than constrains local tempo. Organisations that have it can
+                absorb significant environmental volatility without destabilising. Organisations
+                that lack it fragment under pressure, defaulting to heroic individual effort
+                and informal workarounds that temporarily restore motion while leaving the
+                structural problem untouched.
+            </p>
+
+            <div class="prose-nav">
+                <a href="/doctrine/" class="btn btn-outline">&larr; Doctrine</a>
+                <a href="/lineage/" class="btn btn-primary">Lineage &rarr;</a>
+                <a href="/pages/book.html" class="btn btn-amber">Get the Book &rarr;</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-inner">
+            <p>Doctrine version v2.1 &mdash; living work. Authored by <a href="https://kotsidimos.com" target="_blank">Christos Kotsidimos</a></p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/ckotsidimos" target="_blank">LinkedIn</a>
+                <a href="https://github.com/ckotsidimos/kinetic-enterprise" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
 </footer>
+
+<script>
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
